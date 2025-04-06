@@ -111,6 +111,11 @@ body {
   color: var(--color-grey-900);
 }
 
+.link:focus-visible {
+  background-color: var(--color-green);
+  color: var(--color-grey-900);
+}
+
 .link-item:hover,
 .link-item:focus {
   background-color: var(--color-green);
