@@ -17,6 +17,11 @@
   --color-grey-800: hsl(0, 0%, 12%);
   --color-grey-900: hsl(0, 0%, 8%);
   --color-link: hsl(228, 45%, 44%);
+
+  --spacing-xlarge: 3em;
+  --spacing-large: 2.4em;
+  --spacing-medium: 1.6em;
+  --spacing-small: 1.2em;
 }
 
 *,
@@ -34,7 +39,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: var(--spacing-xlarge);
 }
 
 .text-regular {
@@ -59,9 +64,9 @@ body {
   background-color: var(--color-grey-800);
   display: flex;
   flex-direction: column;
-  gap: 2.4em;
+  gap: var(--spacing-large);
   align-items: center;
-  padding: 2.4em;
+  padding: var(--spacing-large);
   border-radius: 1.5rem;
 }
 
@@ -78,7 +83,7 @@ body {
 .card-info {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: var(--spacing-small);
   align-items: center;
 }
 
@@ -86,7 +91,7 @@ body {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: var(--spacing-medium);
   width: 100%;
 }
 
@@ -103,7 +108,7 @@ body {
   color: inherit;
   width: 100%;
   display: inline-block;
-  padding: 1.2em 1.6em;
+  padding: var(--spacing-small) var(--spacing-medium);
   transition: color 0.3s ease;
 }
 
